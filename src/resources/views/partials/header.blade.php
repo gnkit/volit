@@ -19,9 +19,9 @@
 
                 <!-- Center Of Navbar -->
                 <ul class="nav col-12 col-md-auto mb-md-0">
-                    <li><a href="#" class="nav-link ps-0 link-dark">{{ __('Tasks') }}</a></li>
-                    <li><a href="#" class="nav-link ps-0 link-dark">{{ __('Volunteers') }}</a></li>
-                    <li><a href="#" class="nav-link ps-0 link-dark">{{ __('About') }}</a></li>
+                    <li><a href="#" class="nav-link ps-0 link-success">{{ __('Тапсырмалар') }}</a></li>
+                    <li><a href="#" class="nav-link ps-0 link-success">{{ __('Волонтерлер') }}</a></li>
+                    <li><a href="#" class="nav-link ps-0 link-success">{{ __('Жоба') }}</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -30,7 +30,7 @@
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Log in') }}</a>
                             </li>
                         @endif
 

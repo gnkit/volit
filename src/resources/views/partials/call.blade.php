@@ -1,7 +1,6 @@
-<div class="jumbotron py-3 text-center" style="background-color: #FFEC2D;">
-    <h2 class="display-6">Hello, world!</h2>
-    <p>It uses utility classes for typography.</p>
+<div class="jumbotron py-5 text-center text-white" style="background-color: #0ea36c;">
+    <h4 class="mb-4">Бүгін әлемді жақсырақ орынға<br>айналдыратын тамаша күн!</h4>
     <p class="lead">
-        <a class="btn btn-light" href="#" role="button">Learn more</a>
+        <a class="btn btn-light text-success" href="#" role="button">Тапсырмаларды қарау</a>
     </p>
 </div>
