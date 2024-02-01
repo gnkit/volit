@@ -4,7 +4,7 @@
 
     @include('partials.intro')
 
-    <div class="container py-4">
+    <div class="container pb-4 px-0">
         <h2 class="display-6 text-center mb-4">{{ __('Тапсырмалар') }}</h2>
         <div class="row g-4 flex-wrap">
             <div class="col-md-12 col-lg-6">

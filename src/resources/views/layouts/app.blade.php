@@ -26,7 +26,7 @@
 
     @include('partials.header')
 
-    <main class="py-4">
+    <main class="py-4 ms-auto me-auto" style="max-width: 1200px">
 
         @yield('content')
 

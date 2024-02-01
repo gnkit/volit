@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [\App\Http\Controllers\Home\HomeController::class, 'index'])->name('home');
+Route::get('/tasks', [\App\Http\Controllers\Task\TaskController::class, 'index'])->name('tasks');
 Route::get('/dashboard', [\App\Http\Controllers\Profile\ProfileController::class, 'index'])->name('dashboard');
