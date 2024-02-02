@@ -66,23 +66,23 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body text-dark-emphasis">
-                                <div class="fw-bold"><i class="bi bi-person me-2"></i>Аты Жөні</div>
-                                <div class="fw-bold mb-2">
-                                    <i class="bi bi-house-heart me-2"></i>«Көмектес» Қоғамдық қоры
+                                <div class=""><i class="bi bi-person me-1"></i>Аты Жөні</div>
+                                <div class="mb-2">
+                                    <i class="bi bi-house-heart me-1"></i>«Көмектес» Қоғамдық қоры
                                 </div>
                                 <h5 class="card-title text-dark fw-bold mb-2">
                                     <a class="link-body-emphasis text-decoration-none" href="#">Сайттың дизайнын
                                         жасау</a>
                                 </h5>
                                 <div class="d-flex justify-content-between flex-wrap mb-2">
-                                    <div class="text-danger"><i class="bi bi-clock me-2"></i>24.03.2024 дейін</div>
-                                    <div class=""><i class="bi bi-calendar3 me-2"></i>14.01.2024 ашылды</div>
-                                    <div class=""><i class="bi bi-person-plus me-2"></i>2 қабылдау</div>
+                                    <div class=""><i class="bi bi-clock me-1"></i>24.03.2024 дейін</div>
+                                    <div class=""><i class="bi bi-calendar3 me-1"></i>14.01.2024 ашылды</div>
+                                    <div class=""><i class="bi bi-person-plus me-1"></i>2 қабылдау</div>
                                 </div>
                                 <div class="d-flex justify-content-between flex-wrap mb-2">
-                                    <div class="fw-light"><i class="bi bi-grid me-2"></i>Сайт жасау</div>
-                                    <div class="fw-light"><i class="bi bi-heart me-2"></i>Жануарларға көмек</div>
-                                    <div class="fw-light"><i class="bi bi-gift me-2"></i>Фото және видео пікір</div>
+                                    <div class=""><i class="bi bi-grid me-1"></i>Сайт жасау</div>
+                                    <div class=""><i class="bi bi-heart me-1"></i>Жануарларға көмек</div>
+                                    <div class=""><i class="bi bi-gift me-1"></i>Фото және видео пікір</div>
                                 </div>
                             </div>
                         </div>
