@@ -9,7 +9,7 @@
         <div class="row g-4 flex-wrap">
             <div class="col-md-12 col-lg-6">
                 <div class="card">
-                    <div class="card-body text-dark-emphasis">
+                    <div class="card-body text-muted">
                         <div class=""><i class="bi bi-person me-1"></i>Аты Жөні</div>
                         <div class="mb-2">
                             <i class="bi bi-house-heart me-1"></i>«Көмектес» Қоғамдық қоры

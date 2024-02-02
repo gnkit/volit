@@ -5,9 +5,9 @@
     <div class="container">
         <h1 class="display-6 mb-4">{{ __('Волонтерлар') }}</h1>
         <div class="row">
-            <div class="col-md-12 col-lg-4 rounded-2 p-4 fw-light">
+            <div class="col-md-12 col-lg-4 rounded-2 p-4 text-muted">
                 <p class="lead">{{ __('Волонтерлардың рейтингтерін көруге болады') }}</p>
-                <div class="fw-light mb-4">
+                <div class="mb-4">
                     <span><i class="bi bi-filter me-2"></i>{{ __('Сұрыптау') }}</span>
                     <select class="form-select my-2" aria-label="Default select example">
                         <option selected>{{ __('Таңдау') }}</option>
@@ -47,7 +47,7 @@
                 <div class="row g-4 flex-wrap">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-body text-dark-emphasis">
+                            <div class="card-body text-muted">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" style="max-width: 100px;"
@@ -57,7 +57,7 @@
                                         <h5 class="card-title text-dark fw-bold mb-2">
                                             <a class="link-body-emphasis text-decoration-none" href="#">Фамилия Аты Тегі</a>
                                         </h5>
-                                        <div class="d-flex justify-content-between flex-wrap mb-1">
+                                        <div class="d-flex justify-content-between flex-wrap">
                                             <div class=""><i class="text-warning bi bi-star-fill me-1"></i>4.5/5</div>
                                             <div class=""><i class="bi bi-chat-left-text me-1"></i>35 пікір</div>
                                             <div class=""><i class="text-success bi bi-hand-thumbs-up-fill me-1"></i>124 рахмет</div>

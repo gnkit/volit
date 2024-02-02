@@ -5,9 +5,9 @@
     <div class="container">
         <h1 class="display-6 mb-4">{{ __('Тапсырмалар') }}</h1>
         <div class="row">
-            <div class="col-4 rounded-2 p-4 fw-light">
+            <div class="col-4 rounded-2 p-4 text-muted">
                 <p class="lead">{{ __('Өзіңіз көмектесе алатын саланы таңдауға болады') }}</p>
-                <div class="fw-light mb-4">
+                <div class="mb-4">
                     <span><i class="bi bi-grid me-2"></i>{{ __('Санат') }}</span>
                     <hr class="border-secondary my-2">
                     <div class="form-check">
@@ -35,7 +35,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="fw-light mb-4">
+                <div class="mb-4">
                     <span><i class="bi bi-calendar3-range me-2"></i>{{ __('Статус') }}</span>
                     <hr class="border-secondary my-2">
                     <div class="form-check">
@@ -65,7 +65,7 @@
                 <div class="row g-4 flex-wrap">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-body text-dark-emphasis">
+                            <div class="card-body text-muted">
                                 <div class=""><i class="bi bi-person me-1"></i>Аты Жөні</div>
                                 <div class="mb-2">
                                     <i class="bi bi-house-heart me-1"></i>«Көмектес» Қоғамдық қоры

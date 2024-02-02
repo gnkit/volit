@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Profile;
+namespace App\Http\Controllers\Account;
 
 use App\Http\Controllers\Controller;
 
-class ProfileController extends Controller
+class AccountController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +23,11 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return view('.pages.profile.index');
+        return view('.pages.account.index');
+    }
+
+    public function settings()
+    {
+        return view('pages.account.settings');
     }
 }
