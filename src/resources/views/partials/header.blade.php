@@ -19,8 +19,8 @@
 
                 <!-- Center Of Navbar -->
                 <ul class="nav col-12 col-md-auto mb-md-0">
-                    <li><a href="#" class="nav-link ps-0 link-success">{{ __('Тапсырмалар') }}</a></li>
-                    <li><a href="#" class="nav-link ps-0 link-success">{{ __('Волонтерлер') }}</a></li>
+                    <li><a href="{{ route('tasks') }}" class="nav-link ps-0 link-success">{{ __('Тапсырмалар') }}</a></li>
+                    <li><a href="{{ route('volunteers') }}" class="nav-link ps-0 link-success">{{ __('Волонтерлер') }}</a></li>
                     <li><a href="#" class="nav-link ps-0 link-success">{{ __('Жоба') }}</a></li>
                 </ul>
 

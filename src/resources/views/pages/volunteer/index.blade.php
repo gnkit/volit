@@ -3,57 +3,39 @@
 @section('content')
 
     <div class="container">
-        <h1 class="display-6 mb-4">{{ __('Тапсырмалар') }}</h1>
+        <h1 class="display-6 mb-4">{{ __('Волонтерлар') }}</h1>
         <div class="row">
-            <div class="col-4 rounded-2 p-4 fw-light">
-                <p class="lead">{{ __('Өзіңіз көмектесе алатын саланы таңдауға болады') }}</p>
+            <div class="col-md-12 col-lg-4 rounded-2 p-4 fw-light">
+                <p class="lead">{{ __('Волонтерлардың рейтингтерін көруге болады') }}</p>
                 <div class="fw-light mb-4">
-                    <span><i class="bi bi-grid me-2"></i>{{ __('Санат') }}</span>
-                    <hr class="border-secondary my-2">
+                    <span><i class="bi bi-filter me-2"></i>{{ __('Сұрыптау') }}</span>
+                    <select class="form-select my-2" aria-label="Default select example">
+                        <option selected>{{ __('Таңдау') }}</option>
+                        <option value="1">{{ __('Азаюы бойынша') }}</option>
+                        <option value="2">{{ __('Өсуі бойынша') }}</option>
+                    </select>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
-                            Сайт жасау, қолдау
+                            Рейтинг ұпайы
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
-                            Графика
+                            Пікірлер саны
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
-                            Видео
+                            Шешілген тапсырмалар
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
-                            Құқық
-                        </label>
-                    </div>
-                </div>
-                <div class="fw-light mb-4">
-                    <span><i class="bi bi-calendar3-range me-2"></i>{{ __('Статус') }}</span>
-                    <hr class="border-secondary my-2">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Ашық
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Жасалуда
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Шешілген
+                            Барлық ұпайы
                         </label>
                     </div>
                 </div>
@@ -61,7 +43,7 @@
                     <a class="btn btn-secondary text-white me-3" href="#" role="button">{{ ('Қалпына келтіру') }}</a>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-md-12 col-lg-8">
                 <div class="row g-4 flex-wrap">
                     <div class="col-12">
                         <div class="card">
