@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Task;
+namespace App\Http\Controllers\Shared\Task;
 
 use App\Http\Controllers\Controller;
 
@@ -21,6 +21,6 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return view('pages.task.index');
+        return view('pages.shared.task.index');
     }
 }

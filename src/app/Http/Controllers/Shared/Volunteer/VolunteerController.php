@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Volunteer;
+namespace App\Http\Controllers\Shared\Volunteer;
 
 use App\Http\Controllers\Controller;
 
@@ -21,6 +21,6 @@ class VolunteerController extends Controller
      */
     public function index()
     {
-        return view('pages.volunteer.index');
+        return view('pages.shared.volunteer.index');
     }
 }

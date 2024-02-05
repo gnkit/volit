@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Home;
+namespace App\Http\Controllers\Shared\Home;
 
 use App\Http\Controllers\Controller;
 
@@ -23,6 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home.index');
+        return view('pages.shared.home.index');
     }
 }

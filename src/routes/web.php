@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [\App\Http\Controllers\Home\HomeController::class, 'index'])->name('home');
-Route::get('/tasks', [\App\Http\Controllers\Task\TaskController::class, 'index'])->name('tasks');
-Route::get('/volunteers', [\App\Http\Controllers\Volunteer\VolunteerController::class, 'index'])->name('volunteers');
-Route::get('/account', [\App\Http\Controllers\Account\AccountController::class, 'index'])->name('account');
-Route::get('/settings', [\App\Http\Controllers\Account\AccountController::class, 'settings'])->name('settings');
+Route::get('/', [\App\Http\Controllers\Shared\Home\HomeController::class, 'index'])->name('home');
+Route::get('/tasks', [\App\Http\Controllers\Shared\Task\TaskController::class, 'index'])->name('tasks');
+Route::get('/volunteers', [\App\Http\Controllers\Shared\Volunteer\VolunteerController::class, 'index'])->name('volunteers');
+Route::get('/account', [\App\Http\Controllers\Account\Profile\ProfileController::class, 'index'])->name('account');
+Route::get('/settings', [\App\Http\Controllers\Account\Profile\ProfileController::class, 'settings'])->name('settings');

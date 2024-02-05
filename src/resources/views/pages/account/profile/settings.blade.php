@@ -12,11 +12,13 @@
                             <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                                  alt="avatar"
                                  class="rounded-circle img-fluid" style="width: 150px;">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="position-absolute border rounded-circle px-2 py-1 bg-light text-secondary bi bi-camera-fill"
-                                   style="left: 55%; top:81%;"></i>
-                            </button>
+                            <div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="position-absolute border rounded-circle px-2 py-1 bg-light text-secondary bi bi-camera-fill"
+                                       style="left: 55%; top:75%;"></i>
+                                </button>
+                            </div>
                         </div>
 
                         <!-- Modal -->
@@ -59,7 +61,7 @@
                             </div>
                         </form>
 
-                        <h5 class="my-3">Фамилия Аты Тегі</h5>
+                        <h5 class="mb-3">Фамилия Аты Тегі</h5>
                         <p class="text-muted mb-1">«Көмектес» Қоғамдық қоры</p>
                         <p class="text-muted mb-1">Тапсырыс беруші</p>
                         <p class="text-muted mb-4">Астана қаласы</p>
