@@ -36,7 +36,7 @@ class TaskController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('pages.account.task.show');
     }
 
     /**
@@ -44,7 +44,7 @@ class TaskController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('pages.account.task.edit');
     }
 
     /**

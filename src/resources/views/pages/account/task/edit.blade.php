@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        <h1 class="display-6 mb-4">{{ __('Тапсырма құру') }}</h1>
+        <h1 class="display-6 mb-4">{{ __('Тапсырманы өңдеу') }}</h1>
         <div class="row">
             <div class="col-lg-4">
 
@@ -99,7 +99,7 @@
                                         </a>
                                         <a class="btn btn-dark" href="{{ route('tasks.store') }}">
                                             <i class="bi bi-floppy2-fill"></i>
-                                            {{ __('Жазбаны сақтау') }}
+                                            {{ __('Жазбаны жаңарту') }}
                                         </a>
                                         <a class="btn btn-secondary" href="{{ route('tasks.index') }}">
                                             <i class="bi bi-x"></i>
