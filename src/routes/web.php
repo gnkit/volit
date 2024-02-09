@@ -20,8 +20,10 @@ Route::get('/', [\App\Http\Controllers\Shared\Home\HomeController::class, 'index
 Route::get('/tasks', [\App\Http\Controllers\Shared\Task\TaskController::class, 'index'])->name('tasks');
 Route::get('/volunteers', [\App\Http\Controllers\Shared\Volunteer\VolunteerController::class, 'index'])->name('volunteers');
 
-Route::group(['prefix' => 'account'], function () {
-    Route::get('/', [\App\Http\Controllers\Account\Profile\ProfileController::class, 'index'])->name('account');
+Route::group(['middleware' => ['auth'], 'prefix' => 'account'], function () {
     Route::get('/settings', [\App\Http\Controllers\Account\Profile\ProfileController::class, 'settings'])->name('settings');
-    Route::resource('/tasks', \App\Http\Controllers\Account\Task\TaskController::class);
+    Route::group(['middleware' => ['type']], function () {
+        Route::get('/dashboard', [\App\Http\Controllers\Account\Profile\ProfileController::class, 'index'])->name('dashboard');
+        Route::resource('/tasks', \App\Http\Controllers\Account\Task\TaskController::class);
+    });
 });

@@ -27,6 +27,18 @@
                                 </div>
 
                                 <div class="col mb-3">
+                                    <label for="type" class="form-label">{{ __('Түрі') }} *</label>
+                                    <select name="type" class="form-select" id="type" required>
+                                        <option value="0">{{ __('Қолданушының түрін таңдаңыз...') }}</option>
+                                        <option value="1">Тағайындаушы</option>
+                                        <option value="1">Орындаушы</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        {{ __('Please type a valid status.') }}
+                                    </div>
+                                </div>
+
+                                <div class="col mb-3">
                                     <label for="organization" class="form-label">{{ __('Ұйым атауы') }} </label>
                                     <input name="organization" type="text" class="form-control" id="organization"
                                            placeholder="{{ __('ұйымның толық атауы...') }}"
@@ -37,9 +49,9 @@
                                 </div>
 
                                 <div class="col mb-3">
-                                    <label for="location" class="form-label">{{ __('Орналасқан жері') }} </label>
+                                    <label for="location" class="form-label">{{ __('Орналасқан жері') }} *</label>
                                     <input name="location" type="text" class="form-control" id="location"
-                                           placeholder="{{ __('облыс, қала, ауыл...') }} *"
+                                           placeholder="{{ __('облыс, қала, ауыл...') }} "
                                            value="{{ old('location') ?? '' }}" required>
                                     <div class="invalid-feedback">
                                         {{ __('Valid location is required.') }}
@@ -48,11 +60,11 @@
 
                                 <div class="row">
                                     <div class="text-start">
-                                        <a class="btn btn-success" href="{{ route('account') }}">
+                                        <a class="btn btn-success" href="{{ route('dashboard') }}">
                                             <i class="bi bi-floppy"></i>
                                             {{ __('Сақтау') }}
                                         </a>
-                                        <a class="btn btn-secondary" href="{{ route('account') }}">
+                                        <a class="btn btn-secondary" href="{{ route('dashboard') }}">
                                             <i class="bi bi-x"></i>
                                             {{ __('Бас тарту') }}
                                         </a>
