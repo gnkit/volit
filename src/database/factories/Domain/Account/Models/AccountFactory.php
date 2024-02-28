@@ -25,6 +25,7 @@ class AccountFactory extends Factory
     {
         return [
             'user_id' => User::factory()->create()->id,
+            'role_id' => fake()->numberBetween(2, 3),
             'fullname' => fake()->name(),
             'organization' => fake()->company(),
             'location' => fake()->address(),

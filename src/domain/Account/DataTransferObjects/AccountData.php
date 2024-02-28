@@ -10,6 +10,7 @@ final class AccountData extends Data
     public function __construct(
         public readonly ?int          $id,
         public readonly ?int          $user_id,
+        public readonly ?int          $role_id,
         public readonly string        $fullname,
         public readonly ?string       $organization,
         public readonly ?string       $location,
