@@ -27,7 +27,7 @@
                                         class="bi bi-calendar3 me-1"></i>{{ date('d-m-Y', strtotime($task->start_date)) ?? '' }}
                                     ашылды
                                 </div>
-                                <div class="me-4 mb-2"><i class="bi bi-person-plus me-1"></i>2 қабылдау</div>
+                                <div class="me-4 mb-2"><i class="bi bi-person-plus me-1"></i>{{ count($task->follows) }} қабылдау</div>
                                 <div class="me-4 mb-2"><i class="bi bi-grid me-1"></i>{{ $task->category->name ?? '' }}</div>
                                 <div class="me-4 mb-2"><i class="bi bi-heart me-1"></i>{{ $task->categoryHelp->name ?? '' }}
                                 </div>

@@ -3,6 +3,7 @@
 namespace Domain\Account\Models;
 
 use Domain\Account\Enums\AccountStatus;
+use Domain\Task\Models\Follow;
 use Domain\Task\Models\Task;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -41,5 +42,10 @@ final class Account extends Model
     public function tasks(): HasMany
     {
         return $this->hasMany(Task::class);
+    }
+
+    public function follows(): HasMany
+    {
+        return $this->hasMany(Follow::class);
     }
 }

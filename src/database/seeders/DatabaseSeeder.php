@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             CategoryHelpSeeder::class,
             TaskSeeder::class,
             BonusSeeder::class,
+            FollowSeeder::class,
         ]);
     }
 }

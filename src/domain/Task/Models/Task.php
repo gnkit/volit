@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 final class Task extends Model
@@ -47,5 +48,10 @@ final class Task extends Model
     public function bonuses(): BelongsToMany
     {
         return $this->belongsToMany(Bonus::class, 'bonuses_tasks');
+    }
+
+    public function follows(): HasMany
+    {
+        return $this->hasMany(Follow::class);
     }
 }
