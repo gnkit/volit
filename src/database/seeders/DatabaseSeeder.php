@@ -17,6 +17,10 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             UserSeeder::class,
             AccountSeeder::class,
+            CategorySeeder::class,
+            CategoryHelpSeeder::class,
+            TaskSeeder::class,
+            BonusSeeder::class,
         ]);
     }
 }
