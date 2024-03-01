@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Shared\Home;
 
 use App\Http\Controllers\Controller;
+use Domain\Task\Actions\Task\GetAllTaskAction;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.shared.home.index');
+        $tasks = GetAllTaskAction::execute();
+
+        return view('pages.shared.home.index', ['tasks' => $tasks]);
     }
 }

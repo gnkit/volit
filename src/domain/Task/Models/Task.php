@@ -2,9 +2,12 @@
 
 namespace Domain\Task\Models;
 
+use Domain\Account\Models\Account;
 use Domain\Task\Enums\TaskStatus;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 final class Task extends Model
@@ -26,17 +29,22 @@ final class Task extends Model
         'status' => TaskStatus::class,
     ];
 
-    public function category()
+    public function account(): BelongsTo
+    {
+        return $this->belongsTo(Account::class);
+    }
+
+    public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
     }
 
-    public function categoryHelp()
+    public function categoryHelp(): BelongsTo
     {
         return $this->belongsTo(CategoryHelp::class);
     }
 
-    public function bonuses()
+    public function bonuses(): BelongsToMany
     {
         return $this->belongsToMany(Bonus::class, 'bonuses_tasks');
     }
